@@ -1,0 +1,5 @@
+.canvas.svelte-152zmjb{position:relative}.finished.svelte-152zmjb{display:block !important}.hide.svelte-152zmjb{display:none}.level.svelte-152zmjb{position:absolute;top:0;right:0;padding:10px 10px;color:black;font-size:1.5em;text-align:right}.status.svelte-152zmjb{font-size:4em;font-weight:bold;top:30%;left:50%;position:absolute;transform:translateX(-50%);display:none}
+.char.svelte-1w6jmj{background-image:url("../assets/character/mario2.png");background-position:0 0;background-repeat:0 0;width:48px;height:96px;position:absolute}.jumping.svelte-1w6jmj{transform-origin:50% 50%;animation:svelte-1w6jmj-jump var(--jumpTime) linear alternate infinite}.walking.svelte-1w6jmj{animation:svelte-1w6jmj-char 0.5s steps(3) infinite}.paused.svelte-1w6jmj{animation:none !important}@keyframes svelte-1w6jmj-char{0%{background-position:0px 0}100%{background-position:144px 0}}@keyframes svelte-1w6jmj-jump{0%{transform:translate3d(0, 0px, 0) scale3d(1, 1, 1)}50%{transform:translate3d(0, -60px, 0) scale3d(1, 1, 1)}100%{transform:translate3d(0, -120px, 0) scale3d(1, 1, 1)}}
+.sky.svelte-1srbde5{position:absolute}
+
+/*# sourceMappingURL=bundle.css.map */
