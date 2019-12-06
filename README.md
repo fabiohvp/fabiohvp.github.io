@@ -1,5 +1,4 @@
-# fabiohvp.github.io
-Trabalho de faculdade
+# Trabalho de faculdade
 
 Código fonte:
 https://github.com/fabiohvp/svelte-mario-runner
