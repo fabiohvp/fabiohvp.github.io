@@ -2,7 +2,7 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-	"homepage": "https://fabiohvp.github.io/fabiohvp.github.io",
+	"homepage": "https://fabiohvp.github.io/",
 	"scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
