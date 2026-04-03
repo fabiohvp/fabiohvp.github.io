@@ -11,7 +11,7 @@ export function About() {
             I am a <span className="text-primary font-medium">Senior Full Stack Software Engineer</span> with over 19 years of experience designing, modernizing, and maintaining enterprise-grade, data-driven applications.
           </p>
           <p className="text-muted-foreground">
-            Specializing in <span className="text-foreground">.NET and C#</span> backend development, I also possess strong proficiency in modern frontend frameworks including <span className="text-foreground">Svelte, React, and Angular</span>. My expertise lies in building scalable, high-performance cloud-native solutions on <span className="text-foreground">Microsoft Azure</span>, prioritizing clean architecture and maintainable codebases.
+            Specializing in <span className="text-foreground">.NET and NodeJS</span> backend development, I also possess strong proficiency in modern frontend frameworks including <span className="text-foreground">Svelte, React, and Angular</span>. My expertise lies in building scalable, high-performance cloud-native solutions on <span className="text-foreground">Microsoft Azure</span>, prioritizing clean architecture and maintainable codebases.
           </p>
           <p className="text-muted-foreground">
             I have extensive experience working in <span className="text-foreground">distributed international teams</span> within Agile environments, contributing to complex systems for both private and public sector organizations. I am comfortable with Agile/Scrum methodologies and have a strong focus on technical leadership and mentorship.
