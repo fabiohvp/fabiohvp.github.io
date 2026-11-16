@@ -16,6 +16,9 @@ export function About() {
           <p className="text-muted-foreground">
             I have extensive experience working in <span className="text-foreground">distributed international teams</span> within Agile environments, contributing to complex systems for both private and public sector organizations. I am comfortable with Agile/Scrum methodologies and have a strong focus on technical leadership and mentorship.
           </p>
+          <p className="text-muted-foreground">
+            Over the past six months, I have been actively incorporating <span className="text-foreground">AI into my software development workflow</span>, using <span className="text-foreground">Claude Code</span> and <span className="text-foreground">Google Antigravity</span> to orchestrate AI-assisted development, delegate tasks to specialized agents, review generated code, and improve development productivity.
+          </p>
         </div>
       </div>
     </section>
