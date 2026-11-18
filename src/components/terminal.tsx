@@ -157,6 +157,7 @@ export function Terminal() {
         { text: "Available commands:", type: "success" },
         { text: "  help     - Show this help message", type: "output" },
         { text: "  about    - Learn more about Fabio", type: "output" },
+        { text: "  projects - List key enterprise projects", type: "output" },
         { text: "  skills   - List technical skills", type: "output" },
         { text: "  contact  - Get contact information", type: "output" },
         { text: "  snake    - Play Snake game (use arrow keys)", type: "output" },
@@ -171,6 +172,18 @@ export function Terminal() {
         { text: "Fabio Pinto - Senior Full Stack Software Engineer (18+ years)", type: "success" },
         { text: "Specialist in .NET, Node.js, React, Angular, Svelte, and Microsoft Azure.", type: "output" },
         { text: "Focused on Clean Architecture, high-performance cloud solutions, and AI orchestration.", type: "output" },
+      ])
+    },
+    projects: () => {
+      setLines((prev) => [
+        ...prev,
+        { text: "$ projects", type: "input" },
+        { text: "Key Enterprise Projects:", type: "success" },
+        { text: "• Sales Dashboard (.NET 10, CQRS, Angular 22, ECharts, Azure)", type: "output" },
+        { text: "• Price Suggestion (.NET 10, Azure Service Bus, Redis, Angular, NgRx)", type: "output" },
+        { text: "• e-TCEES (ASP.NET MVC, Digital Signature Engine, Redis, Hangfire, Solr)", type: "output" },
+        { text: "• PDF Compliance (React, ASP.NET Core, REST Microservice, PAdES)", type: "output" },
+        { text: "• Painel de Controle (Angular, ETL, Data Warehouse, Hangfire, SQL Server)", type: "output" },
       ])
     },
     skills: () => {

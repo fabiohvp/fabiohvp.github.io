@@ -10,6 +10,7 @@ export function Navigation() {
   const navItems = [
     { label: "ABOUT", href: "#about" },
     { label: "EXPERIENCE", href: "#experience" },
+    { label: "PROJECTS", href: "#projects" },
     { label: "EDUCATION", href: "#education" },
     { label: "SKILLS", href: "#skills" },
     { label: "CONTACT", href: "#contact" },
