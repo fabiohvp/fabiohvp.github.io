@@ -9,7 +9,7 @@ export function Hero() {
           Senior Full Stack Software Engineer
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-          19+ years of experience designing, modernizing, and maintaining enterprise-grade, data-driven applications specializing in .NET, NodeJS, Svelte, React, and Angular.
+          18+ years of experience developing, modernizing, and maintaining enterprise-grade, data-driven applications specializing in .NET, Node.js, React, Angular, and Azure.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <a

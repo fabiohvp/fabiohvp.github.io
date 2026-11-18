@@ -6,23 +6,31 @@ export function Skills() {
   const skillCategories = [
     {
       title: "Backend",
-      skills: ["C#", "ASP.NET Core", "REST APIs", "NodeJS", "PHP", "EF Core", "Hangfire"],
+      skills: ["C#", ".NET", "ASP.NET Core", "Entity Framework Core", "REST APIs", "Node.js", "Hangfire", "SignalR", "PHP"],
     },
     {
       title: "Frontend",
-      skills: ["Svelte", "React", "Angular", "TypeScript", "JavaScript", "TailwindCSS", "ECharts"],
+      skills: ["React", "React Native (Expo)", "Angular", "Svelte", "SvelteKit", "TypeScript", "JavaScript", "Tailwind CSS", "ECharts"],
     },
     {
       title: "Cloud & DevOps",
-      skills: ["Microsoft Azure", "Docker", "CI/CD", "Azure DevOps"],
+      skills: ["Microsoft Azure (Service Bus, Storage, Key Vault, App Insights, Azure SQL)", "Docker", "CI/CD", "Azure DevOps"],
     },
     {
       title: "Data & Caching",
-      skills: ["SQL Server", "MongoDB", "Redis", "Solr"],
+      skills: ["SQL Server", "Redis", "MongoDB", "Apache Solr", "ETL", "Data Warehouse", "Query Tuning"],
     },
     {
-      title: "Architecture & Methodologies",
-      skills: ["Microservices", "Clean Architecture", "SOLID", "Design Patterns", "Agile", "Scrum", "Technical Leadership", "Mentorship"],
+      title: "Architecture",
+      skills: ["Microservices", "CQRS", "Clean Architecture", "SOLID", "KISS", "DRY", "Design Patterns"],
+    },
+    {
+      title: "AI-Assisted Development",
+      skills: ["Claude Code", "Google Antigravity", "AI Agents", "Code Review"],
+    },
+    {
+      title: "Methodologies & Leadership",
+      skills: ["Agile", "Scrum", "Technical Leadership", "Mentoring", "Technical Training"],
     },
   ]
 

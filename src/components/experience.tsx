@@ -1,10 +1,9 @@
-
-
 import { Calendar, FolderCode, MapPin } from "lucide-react"
 
 interface KeyProject {
   title: string
   description: string
+  items?: string[]
   techStack?: string[]
 }
 
@@ -20,76 +19,131 @@ interface ExperienceItem {
 export function Experience() {
   const experiences: ExperienceItem[] = [
     {
-      period: "Jan 2021 – Present",
+      period: "Jan 2021 – Nov 2026",
       role: "Senior Full Stack Software Engineer",
       company: "Pantheon Inc (ExxonMobil Program)",
-      location: "Remote / Brazil",
+      location: "Remote – Brazil",
       items: [
-        "Working in a distributed global team, collaborating across regions to deliver scalable software solutions.",
-        "Designed and developed scalable backend services using ASP.NET Core, EF Core, Hangfire.",
-        "Built data-intensive dashboards and UI components using Angular.",
-        "Built the price suggestion dashboard using React.",
-        "Built small mobile app to help users to track important KPIs using React Native with Expo.",
-        "Integrated Azure services (Service Bus, Storage, SQL Server, Key Vault, App Insights).",
-        "Optimized API performance and database queries, significantly reducing (average of 35%) response times.",
-        "Managed CI/CD pipelines via Azure DevOps.",
-        "Provided mentorship to junior developers.",
+        "Reduced API response times by an average of 35% by optimizing endpoints and database queries.",
+        "Designed and developed scalable back-end services with ASP.NET Core, Entity Framework Core, and Hangfire.",
+        "Integrated Azure services (Service Bus, Storage, SQL Server, Key Vault, and Application Insights).",
+        "Built data-intensive dashboards and UI components in Angular.",
+        "Managed CI/CD pipelines in Azure DevOps.",
+        "Worked in a distributed global team, collaborating across regions, and mentored junior developers.",
+        "Delivered internal technical training on Clean Code, SOLID principles, and performance optimization.",
+        "Led the modernization of a legacy .NET analytics API into a CQRS-based modular architecture with strict build-time quality gates (analyzers, nullable, warnings as errors), policy-based authorization and reusable infrastructure libraries, improving maintainability and onboarding of new business units.",
       ],
       keyProjects: [
         {
           title: "Sales Dashboard",
           description:
-            "Migrated the application through multiple versions of ASP.NET Core, designed the cache layer for the most expensive queries, implemented a large number of UI components, and created and maintained multiple modules and functionalities.",
+            "Enterprise analytics portal tracking pricing-model predictions, accuracy and business impact across 20+ product lines and regions.",
+          items: [
+            "Parallelized per-business-unit aggregation queries (20+ units), cutting global dashboard load times several-fold compared with the previous sequential implementation.",
+            "Built response-level caching with tag-based invalidation and HTTP 304 support, making repeat loads of heavy analytics views near-instant and eliminating payload transfer for unchanged data.",
+            "Built a responsive Angular 22 front end as a library-based monorepo (core, UI components, domain components, app) using standalone components, Signals, zoneless change detection and lazy-loaded routes.",
+            "Created a reusable, SOLID-based charting layer on top of ECharts powering the analytical views, with filter state synced to the URL and automatic cancellation of outdated requests.",
+          ],
           techStack: [
-            "React",
-            "JavaScript",
-            "TypeScript",
-            "Angular",
-            "Svelte",
-            "SQL",
+            "C#",
+            ".NET 10",
+            "ASP.NET Core",
+            "EF Core",
+            "CQRS",
+            "SQL Server",
             "Azure",
+            "Azure DevOps",
+            "Angular",
+            "TypeScript",
+            "ECharts",
             "Tailwind CSS",
-            "Hangfire",
           ],
         },
         {
-          title: "Price Suggestion Dashboard",
+          title: "Price Suggestion",
           description:
-            "Designed and created the MVP for this project, then contributed to its evolution into the complete solution.",
-          techStack: ["React", "JavaScript", "TypeScript", "ASP.NET", "SQL", "Azure", "Tailwind CSS"],
+            "Took part in building the MVP of the price suggestion dashboard and contributed to its evolution into an end-to-end platform where sales teams review model recommendations, draft prices and submit them for endorsement and execution.",
+          items: [
+            "Contributed to a modular .NET back end of 25+ domain modules running in a single deployable API.",
+            "Integrated enterprise master and transactional data through Azure Service Bus event-driven subscribers, with retry handling, a dead-letter queue and a runtime toggle that pauses consumption during deployments without losing messages.",
+            "Improved resilience and scalability with Redis distributed caching, distributed locking (RedLock), Polly retry policies and parallel queries.",
+            "Supported safe, observable releases with OpenTelemetry/Azure Monitor tracing, 20+ feature flags, versioned database migrations (FluentMigrator) and Hangfire background jobs.",
+          ],
+          techStack: [
+            "C#",
+            ".NET 10",
+            "ASP.NET Core",
+            "EF Core",
+            "SQL Server",
+            "Azure Service Bus",
+            "Redis",
+            "Hangfire",
+            "OpenTelemetry",
+            "Angular",
+            "NgRx",
+            "TypeScript",
+          ],
         },
       ],
     },
     {
       period: "Feb 2013 – Oct 2020",
       role: "Full Stack Software Engineer",
-      company: "Tribunal de Contas do Estado do Espírito Santo (TCE-ES)",
+      company: "Espírito Santo State Court of Audit (TCE-ES)",
       location: "Brazil",
       items: [
-        "Architected, in just one month, the organization’s core enterprise system and a standardized digital signature platform that remained in use for over 10 years, saving an estimated BRL 500,000 in development costs and nearly six months of development time compared with the contracted alternative.",
-        "Developed complex APIs, background processing jobs, ETL workflows, and caching layers.",
-        "Migrated legacy systems to ASP.NET Core and React, improving overall maintainability.",
-        "Utilized a diverse stack including SQL Server, Redis, Solr, SignalR, React and AngularJS.",
-        "Delivered technical training on Clean Code, SOLID principles, and performance optimization.",
+        "Architected the organization's core enterprise system and a standardized digital signature platform, both in use for over 10 years, saving an estimated BRL 500,000 and approximately six months of development time compared with the contracted alternative.",
+        "Initiated the migration of legacy systems to ASP.NET Core and React, improving application maintainability.",
+        "Developed complex APIs, background processing jobs, ETL workflows, and caching layers with SQL Server, Redis, Solr, and SignalR.",
       ],
       keyProjects: [
         {
-          title: "TCE-ES (Core Enterprise System)",
+          title: "e-TCEES",
           description:
-            "Contributed to the development of the project from its early stages, actively participating in architectural and technology selection decisions. Collaborated with the team to define the most suitable technologies and approaches, and was responsible for implementing and integrating key project modules. Worked closely with other team members to ensure code quality, maintainability, and alignment with project requirements.",
-          techStack: ["JavaScript", "TypeScript", "Angular", "ASP.NET", "SQL", "Hangfire", "Apache Solr"],
+            "Core enterprise platform of the TCE-ES supporting the Court's entire operation, from electronic case processing, filing, plenary and virtual sessions and audits to administrative and HR management, across 60+ functional areas.",
+          items: [
+            "Took part in the platform from inception, contributing to architecture and technology decisions and implementing key modules of a large ASP.NET MVC solution (500+ controllers).",
+            "Built shared infrastructure modules reused across portals and services, including Redis caching, Hangfire job scheduling, Solr full-text indexing and real-time notifications with SignalR.",
+            "Developed the digital signature engine (PAdES/PKCS#7 with iTextSharp and BouncyCastle), with certificate-chain and LTV validation, tamper detection, PDF/A checks and a public document-authenticity validation service.",
+            "Implemented a rule-based workflow engine to model the lifecycle of cases and documents.",
+          ],
+          techStack: [
+            "C#",
+            "ASP.NET MVC",
+            "ASP.NET",
+            "Entity Framework",
+            "SQL Server",
+            "Redis",
+            "Hangfire",
+            "Apache Solr",
+            "SignalR",
+            "iTextSharp",
+            "JavaScript",
+            "Angular",
+          ],
         },
         {
           title: "PDF Compliance",
           description:
-            "Sole developer responsible for the end-to-end delivery of the PDF Compliance project. The solution was built with ASP.NET Core and React, providing a web interface for users to submit and analyse PDF documents against the standards and requirements established by the Court. It was also implemented as a microservice exposing a REST API, consumed by other TCE-ES systems to programmatically validate PDF documents and determine whether they comply with the required standards. Responsibilities included architecture, backend and frontend development, API design and implementation, PDF validation logic, and integration with existing TCE-ES systems.",
-          techStack: ["React", "JavaScript", "TypeScript", "ASP.NET Core", "Microservices", "REST APIs"],
+            "Public web tool and validation microservice that checks PDF documents against the Court's regulations before they are filed, used by citizens, public agencies and other TCE-ES systems. Sole developer, responsible for end-to-end delivery (architecture, back end, front end, API design and validation logic).",
+          items: [
+            "Implemented the validation engine covering ICP-Brasil digital signatures, text searchability, per-page size limits and other rules.",
+            "Built a React interface with drag-and-drop multi-file upload and clear, per-file compliance feedback, so users could fix issues before filing.",
+            "Exposed the rules as a REST microservice consumed by other TCE-ES systems (such as electronic filing), keeping a single source of validation as the regulations evolved.",
+          ],
+          techStack: ["React", "JavaScript", "TypeScript", "ASP.NET Core", "C#", "iTextSharp", "Microservices", "REST APIs"],
         },
         {
           title: "Painel de Controle",
           description:
-            "Participated in the design and implementation of the data integration and ETL processes: extracting data from multiple sources, transforming and validating datasets, and loading the processed information into the platform. Also contributed to the development and optimisation of data pipelines, ensuring data consistency, reliability, and availability to support the analytical and reporting requirements of the project.",
-          techStack: ["Angular", "ASP.NET", "SQL", "Redis", "ETL", "Hangfire"],
+            "Public data-transparency platform of the TCE-ES that consolidates fiscal, budget, payroll and compliance indicators for the State and all 78 municipalities of Espírito Santo, used by public managers, auditors and citizens.",
+          items: [
+            "Designed and implemented ETL pipelines that extract, validate and consolidate data from the Court's audit systems (CidadES) and the State financial system (Sigefes) into the platform's analytical base.",
+            "Built interactive Angular dashboards with FusionCharts (charts, treemaps, gauges and Excel export), with map-based navigation and comparison views across municipalities.",
+            "Optimized data pipelines and queries to keep indicators consistent, reliable and quickly available for interactive queries.",
+            "Automated recurring data loads with scheduled background jobs (Hangfire), including validation and monitoring, so indicators stayed up to date without manual intervention.",
+          ],
+          techStack: ["Angular", "TypeScript", "FusionCharts", "ASP.NET", "SQL Server", "ETL", "Hangfire"],
         },
       ],
     },
@@ -99,33 +153,27 @@ export function Experience() {
       company: "TAB Editora e Comunicação",
       location: "Brazil",
       items: [
-        "Developed and maintained custom websites and microsites using PHP, MySQL, jQuery, and Bootstrap.",
-        "Designed and implemented responsive web interfaces, ensuring compatibility across different devices and browsers.",
-        "Participated in the development of a custom Content Management System (CMS) for a construction company, contributing to both functionality and user interface implementation.",
+        "Developed and maintained custom, responsive websites and microsites with PHP, MySQL, jQuery, and Bootstrap, ensuring cross-device and cross-browser compatibility.",
+        "Contributed to a custom Content Management System (CMS) for a construction company, working on both features and user interface.",
       ],
     },
     {
-      period: "2008 – 2010",
+      period: "2008 – 2009",
       role: "Web Developer Intern",
       company: "Dacasa Financeira",
       location: "Brazil",
       items: [
-        "Maintained and enhanced the company's internal CMS using ASP.NET Web Forms and JavaScript.",
-        "Introduced and encouraged the use of JavaScript-based solutions as an alternative to relying heavily on Visual Studio's graphical page-building features.",
-        "Improved the loading performance and responsiveness of several complex CMS screens containing a large number of UI elements.",
-        "Contributed to the evolution of the development team's approach to building more efficient and responsive web interfaces.",
+        "Maintained and enhanced the company's internal CMS with ASP.NET Web Forms and JavaScript, introducing JavaScript-based solutions in place of Visual Studio's visual page-building features.",
+        "Improved loading time and responsiveness of complex CMS screens containing a large number of UI elements.",
       ],
     },
     {
-      period: "2007 – 2007",
+      period: "2007",
       role: "Computer Education Assistant Teacher",
       company: "Centro de Ensino Charles Darwin",
       location: "Brazil",
       items: [
-        "Assisted students in learning and using Microsoft Office applications, including Word, Excel, and PowerPoint.",
-        "Introduced students to the fundamentals of HTML and web page development.",
-        "Taught basic concepts of animation creation using Adobe Flash.",
-        "Provided hands-on support and guidance to students during practical exercises and computer lab activities.",
+        "Supported students in learning Microsoft Office (Word, Excel, and PowerPoint) and taught the fundamentals of HTML, web development, and animation with Adobe Flash.",
       ],
     },
   ]
@@ -165,9 +213,19 @@ export function Experience() {
                   </div>
                   <div className="grid gap-4">
                     {exp.keyProjects.map((project, pIndex) => (
-                      <div key={pIndex} className="p-4 rounded-lg bg-card/60 border border-border/60 space-y-2">
-                        <h4 className="font-semibold text-foreground">{project.title}</h4>
+                      <div key={pIndex} className="p-4 rounded-lg bg-card/60 border border-border/60 space-y-3">
+                        <h4 className="font-semibold text-foreground text-lg">{project.title}</h4>
                         <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+                        {project.items && project.items.length > 0 && (
+                          <ul className="space-y-1.5 pt-1">
+                            {project.items.map((item, itemIdx) => (
+                              <li key={itemIdx} className="text-sm text-muted-foreground leading-relaxed flex gap-2">
+                                <span className="text-primary">•</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                         {project.techStack && (
                           <div className="flex flex-wrap gap-1.5 pt-2">
                             {project.techStack.map((tech, tIndex) => (

@@ -168,19 +168,21 @@ export function Terminal() {
       setLines((prev) => [
         ...prev,
         { text: "$ about", type: "input" },
-        { text: "Fabio Pinto - Senior Full Stack Software Engineer", type: "success" },
-        { text: "Passionate about building scalable, high-performance cloud-native solutions.", type: "output" },
-        { text: "Expertise in .NET, Angular, React, Svelte, and modern cloud architectures.", type: "output" },
+        { text: "Fabio Pinto - Senior Full Stack Software Engineer (18+ years)", type: "success" },
+        { text: "Specialist in .NET, Node.js, React, Angular, Svelte, and Microsoft Azure.", type: "output" },
+        { text: "Focused on Clean Architecture, high-performance cloud solutions, and AI orchestration.", type: "output" },
       ])
     },
     skills: () => {
       setLines((prev) => [
         ...prev,
         { text: "$ skills", type: "input" },
-        { text: "Backend: C#, ASP.NET Core, EF Core, NodeJS, PHP, REST APIs", type: "output" },
-        { text: "Frontend: Angular, React, Svelte, TypeScript, JavaScript, TailwindCSS", type: "output" },
-        { text: "Cloud: Azure, Docker, CI/CD, Azure DevOps", type: "output" },
-        { text: "Data: SQL Server, Redis, MongoDB, Solr", type: "output" },
+        { text: "Backend: C#, .NET, ASP.NET Core, EF Core, REST APIs, Node.js, Hangfire, SignalR, PHP", type: "output" },
+        { text: "Frontend: React, React Native, Angular, Svelte, SvelteKit, TypeScript, Tailwind CSS", type: "output" },
+        { text: "Cloud & DevOps: Azure (Service Bus, Storage, Key Vault, App Insights, Azure SQL), Docker, CI/CD", type: "output" },
+        { text: "Data & Caching: SQL Server, Redis, MongoDB, Apache Solr, ETL, Data Warehouse", type: "output" },
+        { text: "Architecture: Microservices, CQRS, Clean Architecture, SOLID, KISS, DRY", type: "output" },
+        { text: "AI-Assisted: Claude Code, Google Antigravity, AI agents, code review", type: "output" },
       ])
     },
     contact: () => {
