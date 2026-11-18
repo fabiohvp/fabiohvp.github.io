@@ -179,7 +179,7 @@ export function Terminal() {
         { text: "$ skills", type: "input" },
         { text: "Backend: C#, .NET, ASP.NET Core, EF Core, REST APIs, Node.js, Hangfire, SignalR, PHP", type: "output" },
         { text: "Frontend: React, React Native, Angular, Svelte, SvelteKit, TypeScript, Tailwind CSS", type: "output" },
-        { text: "Cloud & DevOps: Azure (Service Bus, Storage, Key Vault, App Insights, Azure SQL), Docker, CI/CD", type: "output" },
+        { text: "Cloud & DevOps: Microsoft Azure, Docker, CI/CD", type: "output" },
         { text: "Data & Caching: SQL Server, Redis, MongoDB, Apache Solr, ETL, Data Warehouse", type: "output" },
         { text: "Architecture: Microservices, CQRS, Clean Architecture, SOLID, KISS, DRY", type: "output" },
         { text: "AI-Assisted: Claude Code, Google Antigravity, AI agents, code review", type: "output" },

@@ -14,7 +14,7 @@ export function Skills() {
     },
     {
       title: "Cloud & DevOps",
-      skills: ["Microsoft Azure (Service Bus, Storage, Key Vault, App Insights, Azure SQL)", "Docker", "CI/CD", "Azure DevOps"],
+      skills: ["Microsoft Azure", "Docker", "CI/CD"],
     },
     {
       title: "Data & Caching",
