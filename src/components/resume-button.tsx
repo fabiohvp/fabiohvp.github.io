@@ -16,8 +16,8 @@ export function ResumeButton({ variant = "primary", className }: ResumeButtonPro
 
   return (
     <a
-      href="/Resume%20-%20Fabio%20Henriques%20Viana%20Pinto.pdf"
-      download="Resume - Fabio Henriques Viana Pinto.pdf"
+      href="/Fabio%20H%20V%20Pinto%20-%20Resume.pdf"
+      download="Fabio H V Pinto - Resume.pdf"
       className={cn(baseClasses, variantClasses[variant], className)}
       aria-label="Download Resume PDF"
     >

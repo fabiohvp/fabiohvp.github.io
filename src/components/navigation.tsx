@@ -42,13 +42,13 @@ export function Navigation() {
         <div className="flex flex-col h-full p-8">
           {/* Header */}
           <div className="mb-12 flex flex-col">
-            <div className="relative w-32 h-32 mb-6 group mx-auto">
-              <div className="absolute -inset-0.5 bg-linear-to-tr from-primary to-primary/50 rounded-full blur opacity-50 group-hover:opacity-75 transition duration-500" />
+            <div className="relative w-32 h-32 mb-6 mx-auto">
+              <div className="absolute -inset-0.5 bg-linear-to-tr from-primary to-primary/50 rounded-full blur opacity-50" />
               <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-background">
                 <img
                   src="/profile.png"
                   alt="Fábio Henriques Viana Pinto"
-                  className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
